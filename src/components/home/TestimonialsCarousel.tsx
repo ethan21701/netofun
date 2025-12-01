@@ -85,7 +85,7 @@ export default function TestimonialsCarousel() {
                 transition={{ duration: 0.3 }}
                 className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
               >
-                <FaQuoteRight className="text-primary-200 text-4xl mb-6" />
+                <FaQuoteRight className="text-primary-300 text-4xl mb-6" />
 
                 <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
                   &ldquo;{testimonials[currentIndex].text}&rdquo;

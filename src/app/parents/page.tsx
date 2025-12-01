@@ -67,7 +67,7 @@ export default function ParentsPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">שקט נפשי להורים</h1>
-            <p className="text-xl text-white/90 leading-relaxed">
+            <p className="text-xl text-white leading-relaxed">
               אנחנו מבינים שלשלוח את הילדים לחו״ל זה צעד גדול. בדיוק בגלל זה עשינו הכל כדי שתוכלו להיות רגועים - מהרגע שהם יוצאים מהבית ועד שהם חוזרים עם חיוך.
             </p>
           </div>
@@ -79,7 +79,7 @@ export default function ParentsPage() {
         <Container>
           <div className="max-w-3xl mx-auto">
             <SectionTitle>מי אנחנו?</SectionTitle>
-            <div className="prose prose-lg mx-auto text-gray-600">
+            <div className="prose prose-lg mx-auto text-gray-700">
               <p>
                 נטו פאן פועלת כבר למעלה מעשור בתחום תיירות הנוער והצעירים. במהלך השנים טיפלנו באלפי צעירים והפכנו למובילים בתחום.
               </p>
@@ -102,7 +102,7 @@ export default function ParentsPage() {
                   <feature.icon className="text-green-600 text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+                <p className="text-gray-700 leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -117,7 +117,7 @@ export default function ParentsPage() {
             {faqs.map((faq, index) => (
               <div key={index} className="bg-white p-6 rounded-xl shadow-sm">
                 <h3 className="font-bold text-lg mb-3 text-primary-700">{faq.question}</h3>
-                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>
@@ -152,7 +152,7 @@ export default function ParentsPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-4">יש לכם שאלות נוספות?</h2>
-            <p className="text-white/90 mb-8">אנחנו כאן בשבילכם - צרו קשר ונשמח לעזור</p>
+            <p className="text-white mb-8">אנחנו כאן בשבילכם - צרו קשר ונשמח לעזור</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:03-379-6666"

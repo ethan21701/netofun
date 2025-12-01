@@ -49,7 +49,7 @@ export default function ContactPage() {
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">צור קשר</h1>
-            <p className="text-xl text-white/90">נשמח לשמוע מכם ולעזור בכל שאלה</p>
+            <p className="text-xl text-white">נשמח לשמוע מכם ולעזור בכל שאלה</p>
           </div>
         </Container>
       </section>
@@ -66,12 +66,12 @@ export default function ContactPage() {
                   href="tel:03-379-6666"
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <FaPhone className="text-primary-600 text-xl" />
+                  <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <FaPhone className="text-primary-700 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">טלפון</h3>
-                    <p className="text-gray-600" dir="ltr">03-379-6666</p>
+                    <p className="text-gray-700" dir="ltr">03-379-6666</p>
                   </div>
                 </a>
 
@@ -86,7 +86,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">וואטסאפ</h3>
-                    <p className="text-gray-600" dir="ltr">+972-51-569-9420</p>
+                    <p className="text-gray-700" dir="ltr">+972-51-569-9420</p>
                   </div>
                 </a>
 
@@ -94,23 +94,23 @@ export default function ContactPage() {
                   href="mailto:info@netofun.co.il"
                   className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors"
                 >
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <FaEnvelope className="text-primary-600 text-xl" />
+                  <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <FaEnvelope className="text-primary-700 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">אימייל</h3>
-                    <p className="text-gray-600">info@netofun.co.il</p>
+                    <p className="text-gray-700">info@netofun.co.il</p>
                   </div>
                 </a>
 
                 <div className="flex items-start gap-4 p-4 bg-gray-50 rounded-xl">
-                  <div className="w-12 h-12 bg-primary-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                    <FaClock className="text-primary-600 text-xl" />
+                  <div className="w-12 h-12 bg-primary-50 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <FaClock className="text-primary-700 text-xl" />
                   </div>
                   <div>
                     <h3 className="font-bold mb-1">שעות פעילות</h3>
-                    <p className="text-gray-600">ימים א׳-ה׳: 09:00-18:00</p>
-                    <p className="text-gray-600">יום ו׳: 09:00-13:00</p>
+                    <p className="text-gray-700">ימים א׳-ה׳: 09:00-18:00</p>
+                    <p className="text-gray-700">יום ו׳: 09:00-13:00</p>
                   </div>
                 </div>
               </div>

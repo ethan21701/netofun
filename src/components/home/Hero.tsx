@@ -6,11 +6,17 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background - solid magenta/fuchsia color matching brand */}
-      <div className="absolute inset-0 bg-primary-600" />
+      {/* Background Photo */}
+      <Image
+        src="/images/hero-party.jpg"
+        alt="NetoFun Party"
+        fill
+        className="object-cover"
+        priority
+      />
 
-      {/* Subtle overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/30" />
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -21,14 +27,20 @@ export default function Hero() {
             alt="נטו פאן"
             width={280}
             height={100}
-            className="h-20 md:h-28 w-auto mx-auto mb-8 brightness-0 invert"
+            className="h-20 md:h-28 w-auto mx-auto mb-8 brightness-0 invert drop-shadow-lg"
             priority
           />
 
-          <p className="text-xl md:text-3xl font-medium mb-4">
+          <p
+            className="text-xl md:text-3xl font-medium mb-4"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+          >
             החברה המרכזית לתיירות צעירים!
           </p>
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl mx-auto">
+          <p
+            className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+          >
             איה נאפה • מאליה • רודוס • סאני ביץ׳ • יורט דה מאר • אילת
           </p>
         </div>
@@ -42,7 +54,7 @@ export default function Hero() {
           </Link>
           <Link
             href="/parents"
-            className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors"
+            className="border-2 border-white text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/10 transition-colors backdrop-blur-sm"
           >
             אני הורה – רוצה לדעת יותר
           </Link>

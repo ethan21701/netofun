@@ -89,7 +89,7 @@ export default function TestimonialsPage() {
         <Container>
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">אומרים עלינו</h1>
-            <p className="text-xl text-white/90">מה אומרים אלפי הצעירים שטסו איתנו</p>
+            <p className="text-xl text-white">מה אומרים אלפי הצעירים שטסו איתנו</p>
           </div>
         </Container>
       </section>
@@ -123,7 +123,7 @@ export default function TestimonialsPage() {
                 transition={{ delay: index * 0.05 }}
                 className="bg-white rounded-2xl shadow-lg p-6"
               >
-                <FaQuoteRight className="text-primary-200 text-2xl mb-4" />
+                <FaQuoteRight className="text-primary-300 text-2xl mb-4" />
 
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -131,7 +131,7 @@ export default function TestimonialsPage() {
                   ))}
                 </div>
 
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-700 leading-relaxed mb-6">
                   &ldquo;{testimonial.text}&rdquo;
                 </p>
 
@@ -163,7 +163,7 @@ export default function TestimonialsPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-2xl font-bold mb-4">רוצים להיות הבאים ברשימה?</h2>
-            <p className="text-gray-600 mb-8">צרו קשר עכשיו וצאו לחופשה שתזכרו לכל החיים</p>
+            <p className="text-gray-700 mb-8">צרו קשר עכשיו וצאו לחופשה שתזכרו לכל החיים</p>
             <a
               href="/#lead-form"
               className="inline-flex items-center justify-center bg-primary-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-primary-700 transition-colors"

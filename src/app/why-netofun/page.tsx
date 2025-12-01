@@ -62,7 +62,7 @@ export default function WhyNetofunPage() {
         <Container>
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">למה נטו פאן?</h1>
-            <p className="text-xl text-white/90 leading-relaxed">
+            <p className="text-xl text-white leading-relaxed">
               מעל עשור של ניסיון, אלפי צעירים מרוצים, והמחויבות שלנו לעשות לכם את החופשה הכי טובה שאפשר.
             </p>
           </div>
@@ -78,7 +78,7 @@ export default function WhyNetofunPage() {
                 <div className="text-4xl md:text-5xl font-black text-primary-600 mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-gray-700 font-medium">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -99,7 +99,7 @@ export default function WhyNetofunPage() {
                   <feature.icon className="text-white text-3xl" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-600 text-lg leading-relaxed">{feature.description}</p>
+                <p className="text-gray-700 text-lg leading-relaxed">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -147,7 +147,7 @@ export default function WhyNetofunPage() {
         <Container>
           <div className="text-center">
             <h2 className="text-3xl font-bold mb-6">מוכנים לחופשה הכי טובה?</h2>
-            <p className="text-gray-600 text-lg mb-8">צרו קשר עכשיו ונמצא לכם את החבילה המושלמת</p>
+            <p className="text-gray-700 text-lg mb-8">צרו קשר עכשיו ונמצא לכם את החבילה המושלמת</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/#lead-form"

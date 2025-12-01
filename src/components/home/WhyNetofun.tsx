@@ -57,7 +57,7 @@ export default function WhyNetofun() {
                 <feature.icon className="text-white text-3xl" />
               </motion.div>
               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <p className="text-gray-700">{feature.description}</p>
             </motion.div>
           ))}
         </div>

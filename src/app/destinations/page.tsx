@@ -29,7 +29,7 @@ export default function DestinationsPage() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                 <div className="absolute bottom-0 right-0 left-0 p-8 text-white">
-                  <p className="text-sm text-white/80 mb-2">{dest.country}</p>
+                  <p className="text-sm text-white/90 mb-2">{dest.country}</p>
                   <h2 className="text-3xl font-bold mb-3">{dest.name}</h2>
                   <p className="text-white/90 mb-4">{dest.tagline}</p>
 

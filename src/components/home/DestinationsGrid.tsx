@@ -92,7 +92,7 @@ export default function DestinationsGrid() {
 
                   {/* Content */}
                   <div className="absolute bottom-0 right-0 left-0 p-6 text-white">
-                    <p className="text-sm text-white/80 mb-1">{dest.country}</p>
+                    <p className="text-sm text-white/90 mb-1">{dest.country}</p>
                     <h3 className="text-2xl font-bold mb-2">{dest.name}</h3>
                     <p className="text-white/90">{dest.tagline}</p>
 
