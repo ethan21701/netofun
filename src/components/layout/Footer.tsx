@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { FaPhone, FaEnvelope, FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa';
 import { IoLogoWhatsapp } from 'react-icons/io';
 import Container from '@/components/shared/Container';
@@ -33,7 +34,13 @@ export default function Footer() {
         <div className="py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand & Contact */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">נטו פאן</h3>
+            <Image
+              src="https://netofun.co.il/wp-content/uploads/2019/07/NetoFun-Logo.png"
+              alt="נטו פאן"
+              width={160}
+              height={57}
+              className="h-12 w-auto mb-4 brightness-0 invert"
+            />
             <p className="text-gray-400 mb-6">
               החברה המרכזית לתיירות צעירים בישראל. מעל עשור של ניסיון בחופשות מושלמות.
             </p>

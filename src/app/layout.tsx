@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="he" dir="rtl">
-      <body className="font-heebo antialiased min-h-screen flex flex-col">
+      <body className="font-rubik antialiased min-h-screen flex flex-col">
         <Header />
         <main className="flex-grow">
           {children}

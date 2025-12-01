@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import Container from '@/components/shared/Container';
@@ -46,13 +47,16 @@ export default function Header() {
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span
-              className={`text-2xl font-bold transition-colors ${
-                isScrolled ? 'text-primary-600' : 'text-white'
+            <Image
+              src="https://netofun.co.il/wp-content/uploads/2019/07/NetoFun-Logo.png"
+              alt="נטו פאן"
+              width={140}
+              height={50}
+              className={`h-10 w-auto transition-all ${
+                isScrolled ? '' : 'brightness-0 invert'
               }`}
-            >
-              נטו פאן
-            </span>
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
