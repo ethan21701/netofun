@@ -34,7 +34,7 @@ export default function Hero() {
             <span className="text-yellow-400">פאן</span>
           </h1>
           <p
-            className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto tracking-wide"
+            className="text-lg md:text-xl text-white mb-10 max-w-2xl mx-auto tracking-wide"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
             איה נאפה • מאליה • רודוס • סאני ביץ׳ • יורט דה מאר • אילת

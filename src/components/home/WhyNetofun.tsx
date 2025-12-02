@@ -45,21 +45,19 @@ export default function WhyNetofun() {
           {features.map((feature, index) => (
             <motion.div
               key={feature.title}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.15, duration: 0.5 }}
-              whileHover={{ scale: 1.03 }}
-              className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+              transition={{ duration: 0.3 }}
+              className="text-center bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100"
             >
-              <motion.div
-                whileHover={{ scale: 1.1, rotate: 5 }}
+              <div
                 className={`w-24 h-24 ${feature.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}
               >
                 <feature.icon className={`${(feature as { textColor?: string }).textColor || 'text-white'} text-4xl`} />
-              </motion.div>
+              </div>
               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-              <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <p className="text-gray-700 leading-relaxed">{feature.description}</p>
             </motion.div>
           ))}
         </div>

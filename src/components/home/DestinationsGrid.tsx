@@ -32,7 +32,7 @@ export default function DestinationsGrid() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              transition={{ duration: 0.3 }}
             >
               <Link href={`/destinations/${dest.slug}`} className="group block">
                 <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
@@ -53,9 +53,9 @@ export default function DestinationsGrid() {
 
                   {/* Content */}
                   <div className="absolute bottom-0 right-0 left-0 p-6 text-white">
-                    <p className="text-sm text-white/90 mb-1">{dest.country}</p>
+                    <p className="text-sm text-white mb-1">{dest.country}</p>
                     <h3 className="text-2xl font-bold mb-2">{dest.name}</h3>
-                    <p className="text-white/90">{dest.tagline}</p>
+                    <p className="text-white">{dest.tagline}</p>
 
                     <div className="mt-4 flex items-center gap-2 text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
                       <span>לפרטים נוספים</span>

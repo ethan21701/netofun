@@ -54,3 +54,21 @@ body {
     animation-delay: 600ms;
   }
 }
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Disable hover scale effects on mobile/tablet */
+@media (max-width: 1024px) {
+  .group-hover\:scale-110,
+  .hover\:scale-105,
+  .hover\:scale-110 {
+    transform: none !important;
+  }
+}

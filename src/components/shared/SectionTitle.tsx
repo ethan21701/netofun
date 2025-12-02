@@ -29,7 +29,7 @@ export default function SectionTitle({
       <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${light ? 'text-white' : ''}`}>{children}</h2>
       <div className={`w-20 h-1 ${light ? 'bg-yellow-400' : 'bg-purple-500'} ${centered ? 'mx-auto' : ''} mb-4 rounded-full`} />
       {subtitle && (
-        <p className={`text-lg max-w-2xl mx-auto ${light ? 'text-white/90' : 'text-gray-700'}`}>{subtitle}</p>
+        <p className={`text-lg max-w-2xl mx-auto ${light ? 'text-white' : 'text-gray-700'}`}>{subtitle}</p>
       )}
     </motion.div>
   );

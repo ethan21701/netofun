@@ -98,7 +98,7 @@ export default function TestimonialsCarousel() {
                   </div>
                   <div>
                     <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
-                    <p className="text-gray-500">{testimonials[currentIndex].destination}</p>
+                    <p className="text-gray-600">{testimonials[currentIndex].destination}</p>
                   </div>
                 </div>
               </motion.div>
