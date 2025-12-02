@@ -29,9 +29,9 @@ export const destinations: Destination[] = [
     slug: 'ayia-napa',
     name: 'איה נאפה',
     country: 'קפריסין',
-    tagline: 'בירת המסיבות של קפריסין',
+    tagline: 'האיביזה של הים התיכון - הכל מתחיל בכיכר',
     heroImage: '/images/destinations/ayia-napa-hero.jpg',
-    description: 'איה נאפה היא יעד החלומות לצעירים שמחפשים שילוב מושלם של חופים מדהימים, מסיבות מטורפות ואווירה בלתי נשכחת. עם מועדונים מהטובים באירופה, חופים עם מים צלולים ואווירה צעירה ותוססת - זה המקום להיות בו!',
+    description: 'איה נאפה היא בירת המסיבות של קפריסין והיעד הכי פרוע בים התיכון! העיירה נקראת "האיביזה הקפריסאית" בזכות חיי הלילה המטורפים שלה. בניגוד ליעדים אחרים, באיה נאפה אין רחוב מסיבות - יש כיכר מסיבות! כיכר איה נאפה (Ayia Napa Square) היא המרכז של הכל, עמוסה בברים, מועדונים ומסעדות. המועדונים נפתחים בחצות ונסגרים אחרי 5 בבוקר.',
     suitableFor: [
       'אחרי בגרויות',
       'לפני צבא',
@@ -45,14 +45,27 @@ export const destinations: Destination[] = [
       { icon: '🚐', title: 'העברות', description: 'העברות משדה התעופה למלון וחזרה' },
       { icon: '🏨', title: 'לינה', description: 'לינה במלונות איכותיים' },
       { icon: '👥', title: 'נציגים', description: 'נציגים ישראלים 24/7' },
-      { icon: '🎉', title: 'מסיבות', description: 'כניסה למסיבות הכי טובות' },
+      { icon: '🎉', title: 'Kandi Fest', description: 'המסיבה הכי מטורפת בימי שישי' },
+      { icon: '🛥️', title: 'Fantasy Boat Party', description: 'שייט יומי עם אלכוהול ומוזיקה' },
+      { icon: '🎨', title: 'מסיבות נושא', description: 'Paint Party, White Party, Jungle Party, Full Moon Party' },
     ],
     hotels: ['napa-plaza', 'nestor-hotel', 'callisto-village'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/ayia-napa-1.jpg',
+      '/images/destinations/gallery/ayia-napa-2.jpg',
+    ],
     faq: [
       {
-        question: 'האם איה נאפה מתאימה לגיל 16?',
-        answer: 'כן! איה נאפה מתאימה מאוד לגיל 16 ומעלה. יש הרבה פעילויות ואטרקציות שמתאימות לכל הגילאים, והנציגים שלנו דואגים לכולם.',
+        question: 'מהם המועדונים המובילים באיה נאפה?',
+        answer: 'Castle Club (מה-100 הטובים בעולם!), Aqua Club עם בריכה בפנים ומסיבות קצף, Club Ice עם מסיבות נושא מטורפות, ו-Black & White למוזיקה אורבנית.',
+      },
+      {
+        question: 'מה זה Fantasy Boat Party?',
+        answer: 'שייט של 4 שעות מסביב לחופי קפריסין עם אלכוהול חופשי, מוזיקה ונופים מדהימים. יוצא כמעט כל יום בין אפריל לאוקטובר!',
+      },
+      {
+        question: 'כמה כסף צריך להביא?',
+        answer: 'כניסה למועדונים עולה בין 10-30 יורו (לפעמים חינם בתחילת הערב), משקאות 5-10 יורו. מומלץ להביא 800-1200 יורו לבזבוזים.',
       },
       {
         question: 'האם יש נציגים דוברי עברית?',
@@ -69,9 +82,9 @@ export const destinations: Destination[] = [
     slug: 'malia',
     name: 'מאליה',
     country: 'יוון',
-    tagline: 'חוויה יוונית בלתי נשכחת',
+    tagline: 'הרצועה היוונית - 1.5 ק״מ של הנאה טהורה',
     heroImage: '/images/destinations/malia-hero.jpg',
-    description: 'מאליה בכרתים היא אחד היעדים הפופולריים ביותר לצעירים מכל אירופה. שילוב מושלם של תרבות יוונית אותנטית, חופים יפהפיים, מסיבות עד הבוקר ואוכל מדהים.',
+    description: 'מאליה בכרתים היא גן עדן לצעירים מכל אירופה! הלב של מאליה הוא "הרצועה" (The Malia Strip) - רחוב הולכי רגל באורך 1.5 ק"מ שישן ביום ומתעורר בלילה. מרחוב דימוקרטיאס ועד לחוף - הכל עמוס בברים ומועדונים עם מוזיקה מכל הסוגים. הכניסה לרוב המקומות חינם - משלמים רק על שתייה!',
     suitableFor: [
       'אחרי בגרויות',
       'לפני צבא',
@@ -85,14 +98,26 @@ export const destinations: Destination[] = [
       { icon: '🚐', title: 'העברות', description: 'העברות משדה התעופה למלון וחזרה' },
       { icon: '🏨', title: 'לינה', description: 'לינה במלונות איכותיים' },
       { icon: '👥', title: 'נציגים', description: 'נציגים ישראלים 24/7' },
-      { icon: '🎉', title: 'מסיבות', description: 'כניסה למסיבות הכי טובות' },
+      { icon: '🎉', title: 'כניסה חופשית', description: 'ברוב המועדונים הכניסה חינם!' },
+      { icon: '🏖️', title: 'Strip מסיבות', description: '1.5 ק"מ של ברים ומועדונים' },
     ],
     hotels: ['malia-holidays', 'malia-central'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/malia-1.jpg',
+      '/images/destinations/gallery/malia-2.jpg',
+    ],
     faq: [
       {
+        question: 'מהם המועדונים הכי טובים במאליה?',
+        answer: 'Apollo Club עם די-ג\'ייז בינלאומיים, Candy Club עם אווירה מטורפת, Camelot Castle Club עם עיצוב ימי הביניים, ו-Zig Zag Club.',
+      },
+      {
+        question: 'מתי הכי כדאי להגיע?',
+        answer: 'יולי ותחילת אוגוסט הם השיא - הרצועה מלאה עד אפס מקום! יוני מצוין למי שרוצה מחירים נוחים יותר.',
+      },
+      {
         question: 'מה ההבדל בין מאליה לאיה נאפה?',
-        answer: 'שניהם יעדים מעולים! מאליה נמצאת בכרתים ומציעה גם חוויה תרבותית יוונית. איה נאפה ממוקדת יותר במסיבות.',
+        answer: 'מאליה היא יותר "רצועה" אחת ארוכה של מסיבות, בעוד איה נאפה ממוקדת סביב כיכר. שתיהן מדהימות, אבל מאליה נותנת גם טעימה מהתרבות היוונית.',
       },
       {
         question: 'האם יש נציגים דוברי עברית?',
@@ -105,9 +130,9 @@ export const destinations: Destination[] = [
     slug: 'rhodes',
     name: 'רודוס',
     country: 'יוון',
-    tagline: 'האי המושלם לקיץ',
+    tagline: 'פאליראקי - רחוב הברים האגדי',
     heroImage: '/images/destinations/rhodes-hero.jpg',
-    description: 'רודוס הוא אחד האיים היפים ביותר ביוון. שילוב של חופים מדהימים, עיר עתיקה מרתקת, חיי לילה תוססים ואווירה רגועה יותר מיעדים אחרים - מושלם למי שרוצה קצת מהכל.',
+    description: 'רודוס הוא שילוב מושלם של היסטוריה, חופים ומסיבות! האזור הכי לוהט הוא פאליראקי (Faliraki) - עיירת החוף עם רחוב הברים האגדי. Bar Street ו-Club Street הם הלב הפועם - מלאים באורות מהבהבים, מוזיקה רועמת ואווירת מסיבה יוונית אמיתית. אם מגלוף היא הגרסה הספרדית, פאליראקי היא הגרסה היוונית!',
     suitableFor: [
       'אחרי בגרויות',
       'אחרי צבא',
@@ -120,13 +145,26 @@ export const destinations: Destination[] = [
       { icon: '🚐', title: 'העברות', description: 'העברות משדה התעופה למלון וחזרה' },
       { icon: '🏨', title: 'לינה', description: 'לינה במלונות איכותיים' },
       { icon: '👥', title: 'נציגים', description: 'נציגים ישראלים 24/7' },
+      { icon: '🍻', title: 'Bar Street', description: 'רחוב הברים האגדי של פאליראקי' },
+      { icon: '🏛️', title: 'עיר עתיקה', description: 'סיורים בעיר העתיקה של רודוס (אתר UNESCO)' },
     ],
     hotels: ['rhodes-beach'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/rhodes-1.jpg',
+      '/images/destinations/gallery/rhodes-2.jpg',
+    ],
     faq: [
       {
-        question: 'האם רודוס מתאימה למי שרוצה פחות מסיבות?',
-        answer: 'בהחלט! רודוס מציעה איזון נהדר - יש חיי לילה תוססים למי שרוצה, אבל גם הרבה פעילויות אחרות ואווירה רגועה יותר.',
+        question: 'מהם המקומות הכי טובים בפאליראקי?',
+        answer: 'Bed Club - מהמועדונים הכי טובים, Bedrock - קריוקי ומסיבות עד הבוקר, Yolo Club - מוזיקה רועמת והמון אנשים, ו-Bondi Bar לקוקטיילים איכותיים.',
+      },
+      {
+        question: 'כמה עולה כניסה למועדונים?',
+        answer: 'בין 5-15 יורו, לרוב כולל משקה ראשון חינם. הקוד לבוש מאוד רגוע - בגדי חופש בסדר גמור!',
+      },
+      {
+        question: 'האם רודוס מתאימה גם למי שרוצה יותר רוגע?',
+        answer: 'בהחלט! רודוס מציעה איזון מושלם - פאליראקי למסיבות, אבל גם עיר עתיקה מדהימה, חופים שקטים ואוכל יווני מעולה.',
       },
     ],
     color: 'from-amber-500 to-orange-600',
@@ -155,7 +193,10 @@ export const destinations: Destination[] = [
       { icon: '🚢', title: 'מסיבת ספינה', description: 'מסיבת ספינה שבועית עם נופים משוגעים' },
     ],
     hotels: ['sunny-beach-hotel'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/sunny-beach-1.jpg',
+      '/images/destinations/gallery/sunny-beach-2.jpg',
+    ],
     faq: [
       {
         question: 'מה המסיבות המיוחדות בסאני ביץ׳?',
@@ -180,12 +221,12 @@ export const destinations: Destination[] = [
     slug: 'lloret-de-mar',
     name: 'יורט דה מאר',
     country: 'ספרד',
-    tagline: 'ריביירה ספרדית לוהטת',
+    tagline: 'בירת חיי הלילה של קוסטה בראווה',
     heroImage: '/images/destinations/lloret-hero.jpg',
-    description: 'יורט דה מאר על חוף הריביירה הספרדית היא יעד מושלם לחופשת קיץ לוהטת. מועדונים ענקיים, חופים יפהפיים, אוכל ספרדי מדהים ואווירה בלתי נשכחת.',
+    description: 'יורט דה מאר היא עיר המסיבות של קוסטה בראווה! עם יותר מ-300 מקומות בילוי, זו בירת חיי הלילה של החוף הספרדי. הרצועה הראשית (Av. Just Marles Vilarrodonna) עמוסה במועדונים ענקיים - חלקם מהגדולים באירופה! היתרון הגדול: תמורה מעולה למחיר בהשוואה ליעדים אחרים בספרד, וקרבה לברצלונה לטיולי יום.',
     suitableFor: [
       'אחרי צבא',
-      'גילאי 18-25',
+      'גילאי 16-25',
       'אוהבי מסיבות גדולות',
       'מחפשי חוויה ספרדית',
     ],
@@ -194,11 +235,27 @@ export const destinations: Destination[] = [
       { icon: '🚐', title: 'העברות', description: 'העברות משדה התעופה למלון וחזרה' },
       { icon: '🏨', title: 'לינה', description: 'לינה במלונות איכותיים' },
       { icon: '👥', title: 'נציגים', description: 'נציגים ישראלים 24/7' },
-      { icon: '🎉', title: 'מסיבות', description: 'כניסה למסיבות הכי טובות' },
+      { icon: '🎉', title: 'מסיבות נושא', description: 'Foam Party, Neon Party, T-Shirt Party' },
+      { icon: '🏙️', title: 'טיול לברצלונה', description: 'קרוב מאוד ליום טיול מושלם' },
     ],
     hotels: ['lloret-hotel'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/lloret-1.jpg',
+      '/images/destinations/gallery/lloret-2.jpg',
+    ],
     faq: [
+      {
+        question: 'מהם המועדונים הכי מפורסמים?',
+        answer: 'Disco Tropics - מה-100 הטובים בעולם, פועל מ-1979 עם 4 אולמות! Disco Colossos - הכי גדול בעיר עם 2,500 איש, St. Trop - 40 שנה של מסיבות, ו-Revolution לטכנו ומוזיקה אלקטרונית.',
+      },
+      {
+        question: 'מאיזה גיל אפשר להיכנס?',
+        answer: 'מגיל 16 אפשר להיכנס להרבה מקומות, מגיל 18 לכל המועדונים הגדולים.',
+      },
+      {
+        question: 'מתי מתחילות המסיבות?',
+        answer: 'הספרדים מתחילים מאוחר! הברים מתחילים להתמלא רק אחרי חצות, אז אל תתפלאו אם בעשר בלילה עדיין שקט.',
+      },
       {
         question: 'מה מיוחד ביורט דה מאר?',
         answer: 'יורט דה מאר ידועה במועדונים הענקיים שלה, חלקם מהגדולים באירופה! בנוסף, הקרבה לברצלונה מאפשרת טיולי יום מדהימים.',
@@ -210,9 +267,9 @@ export const destinations: Destination[] = [
     slug: 'eilat',
     name: 'אילת',
     country: 'ישראל',
-    tagline: 'פינוק ישראלי במפרץ',
+    tagline: 'עיר המסיבות של ישראל - בלי דרכון!',
     heroImage: '/images/destinations/eilat-hero.jpg',
-    description: 'אילת - עיר הנופש הדרומית של ישראל. ים סוף מדהים, שמש כל השנה, מלונות מפנקים, פעילויות אקסטרים וחיי לילה תוססים. הכל בלי צורך בדרכון!',
+    description: 'אילת היא עיר הנופש והמסיבות של ישראל! שמש כל השנה, ים סוף מדהים, ומסיבות שלא נגמרות. היתרון הכי גדול? הכל בלי דרכון, בלי טיסות ארוכות, בלי החלפת כסף. המועדונים הגדולים כמו סלינה מזכירים את איביזה או לאס וגאס - במה ענקית, לייזרים ואש, ורוקדים עד הזריחה!',
     suitableFor: [
       'אחרי בגרויות',
       'גילאי 16-21',
@@ -224,14 +281,26 @@ export const destinations: Destination[] = [
       { icon: '🚌', title: 'הסעות', description: 'הסעות מאורגנות מהמרכז' },
       { icon: '🏨', title: 'לינה', description: 'לינה במלונות מפנקים' },
       { icon: '👥', title: 'נציגים', description: 'נציגים ישראלים 24/7' },
-      { icon: '🎉', title: 'פעילויות', description: 'פעילויות ואטרקציות' },
+      { icon: '🏜️', title: 'מסיבות מדבר', description: 'אירועי מוזיקה בנגב עם תאורה מטורפת' },
+      { icon: '🏖️', title: 'מסיבות חוף', description: 'מסיבות בחופי טאבא ודקל' },
     ],
     hotels: ['eilat-hotel'],
-    gallery: [],
+    gallery: [
+      '/images/destinations/gallery/eilat-1.jpg',
+      '/images/destinations/gallery/eilat-2.jpg',
+    ],
     faq: [
       {
-        question: 'מה היתרון של אילת על פני יעדים בחו״ל?',
-        answer: 'אילת מציעה חופשה מדהימה ללא צורך בדרכון, טיסות או החלפת כסף. מושלם למי שרוצה חופשה מהירה וקלה!',
+        question: 'מהם המועדונים הכי טובים באילת?',
+        answer: 'סלינה (Selena) - מועדון פתוח ענקי בסגנון איביזה עם לייזרים ואש, Crazy Elephant - די-ג\'ייז ישראלים ובינלאומיים עם רחבה ענקית, Three Monkeys - פאב אנגלי קלאסי עם ספורט ומוזיקה חיה.',
+      },
+      {
+        question: 'מה מיוחד במסיבות החוף?',
+        answer: 'בקיץ מתקיימות מסיבות ריקודים על חופי טאבא, במיוחד בחוף דקל. בנוסף יש פסטיבלי מוזיקה במדבר הנגב עם מופעי אור מטורפים מתחת לכוכבים!',
+      },
+      {
+        question: 'למה לבחור באילת?',
+        answer: 'הכל בשקלים, בלי צורך בדרכון או טיסות ארוכות. מושלם לחופשה קצרה וטובה, עם כל היתרונות של עיר מסיבות בינלאומית.',
       },
     ],
     color: 'from-teal-500 to-emerald-600',
