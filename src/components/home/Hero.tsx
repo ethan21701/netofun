@@ -27,7 +27,7 @@ export default function Hero() {
             alt="נטו פאן"
             width={280}
             height={100}
-            className="h-20 md:h-28 w-auto mx-auto mb-8 brightness-0 invert drop-shadow-lg"
+            className="h-20 md:h-28 w-auto mx-auto mb-8 drop-shadow-lg"
             priority
           />
 

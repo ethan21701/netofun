@@ -39,7 +39,7 @@ export default function Footer() {
               alt="נטו פאן"
               width={160}
               height={57}
-              className="h-12 w-auto mb-4 brightness-0 invert"
+              className="h-12 w-auto mb-4"
             />
             <p className="text-gray-400 mb-6">
               החברה המרכזית לתיירות צעירים בישראל. מעל עשור של ניסיון בחופשות מושלמות.
