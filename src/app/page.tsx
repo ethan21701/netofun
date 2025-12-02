@@ -1,5 +1,6 @@
 import {
   Hero,
+  VideoSection,
   LeadForm,
   DestinationsGrid,
   WhyNetofun,
@@ -10,6 +11,7 @@ export default function Home() {
   return (
     <>
       <Hero />
+      <VideoSection />
       <LeadForm />
       <DestinationsGrid />
       <WhyNetofun />
