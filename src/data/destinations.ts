@@ -137,7 +137,7 @@ export const destinations: Destination[] = [
     name: 'רודוס',
     country: 'יוון',
     tagline: 'פאליראקי - רחוב הברים האגדי',
-    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
+    heroImage: '',
     description: 'רודוס הוא שילוב מושלם של היסטוריה, חופים ומסיבות! האזור הכי לוהט הוא פאליראקי (Faliraki) - עיירת החוף עם רחוב הברים האגדי. Bar Street ו-Club Street הם הלב הפועם - מלאים באורות מהבהבים, מוזיקה רועמת ואווירת מסיבה יוונית אמיתית. אם מגלוף היא הגרסה הספרדית, פאליראקי היא הגרסה היוונית!',
     suitableFor: [
       'אחרי בגרויות',
@@ -289,7 +289,7 @@ export const destinations: Destination[] = [
     name: 'אילת',
     country: 'ישראל',
     tagline: 'עיר המסיבות של ישראל - בלי דרכון!',
-    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
+    heroImage: '',
     description: 'אילת היא עיר הנופש והמסיבות של ישראל! שמש כל השנה, ים סוף מדהים, ומסיבות שלא נגמרות. היתרון הכי גדול? הכל בלי דרכון, בלי טיסות ארוכות, בלי החלפת כסף. המועדונים הגדולים כמו סלינה מזכירים את איביזה או לאס וגאס - במה ענקית, לייזרים ואש, ורוקדים עד הזריחה!',
     suitableFor: [
       'אחרי בגרויות',

@@ -26,12 +26,16 @@ export default function DestinationsPage() {
               className="group block"
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
-                <Image
-                  src={dest.heroImage}
-                  alt={dest.name}
-                  fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-500"
-                />
+                {dest.heroImage ? (
+                  <Image
+                    src={dest.heroImage}
+                    alt={dest.name}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                ) : (
+                  <div className={`absolute inset-0 bg-gradient-to-br ${dest.color}`} />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                 <div className="absolute bottom-0 right-0 left-0 p-8 text-white">

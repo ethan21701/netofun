@@ -36,13 +36,17 @@ export default function DestinationsGrid() {
             >
               <Link href={`/destinations/${dest.slug}`} className="group block">
                 <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
-                  {/* Background Image */}
-                  <Image
-                    src={dest.image}
-                    alt={dest.name}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
+                  {/* Background Image or Gradient */}
+                  {dest.image ? (
+                    <Image
+                      src={dest.image}
+                      alt={dest.name}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  ) : (
+                    <div className={`absolute inset-0 bg-gradient-to-br ${dest.color}`} />
+                  )}
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

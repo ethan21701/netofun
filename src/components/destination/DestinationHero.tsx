@@ -11,14 +11,18 @@ interface Props {
 export default function DestinationHero({ destination }: Props) {
   return (
     <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <Image
-        src={destination.heroImage}
-        alt={destination.name}
-        fill
-        className="object-cover"
-        priority
-      />
+      {/* Background Image or Gradient */}
+      {destination.heroImage ? (
+        <Image
+          src={destination.heroImage}
+          alt={destination.name}
+          fill
+          className="object-cover"
+          priority
+        />
+      ) : (
+        <div className={`absolute inset-0 bg-gradient-to-br ${destination.color}`} />
+      )}
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/30" />
