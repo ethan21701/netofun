@@ -48,7 +48,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="https://netofun.co.il/wp-content/uploads/2019/07/NetoFun-Logo.png"
+              src="/images/logo.png"
               alt="נטו פאן"
               width={140}
               height={50}
