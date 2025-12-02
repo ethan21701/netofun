@@ -23,7 +23,7 @@ export default function Hero() {
         <div>
           {/* Logo */}
           <Image
-            src="https://netofun.co.il/wp-content/uploads/2019/07/NetoFun-Logo.png"
+            src="/images/logo.png"
             alt="נטו פאן"
             width={280}
             height={100}
@@ -61,16 +61,19 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Decorative Plane */}
-      <div className="absolute bottom-8 left-0 right-0 z-10 pointer-events-none">
+      {/* Plane Button */}
+      <Link
+        href="/destinations"
+        className="absolute bottom-8 left-0 right-0 z-10 flex justify-center group"
+      >
         <Image
           src="/images/מטוס-נטופאן-1024x323.png"
-          alt=""
+          alt="לכל היעדים שלנו"
           width={300}
           height={95}
-          className="mx-auto opacity-90 drop-shadow-2xl"
+          className="opacity-90 drop-shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2"
         />
-      </div>
+      </Link>
     </section>
   );
 }

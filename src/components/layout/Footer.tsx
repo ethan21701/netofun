@@ -35,7 +35,7 @@ export default function Footer() {
           {/* Brand & Contact */}
           <div>
             <Image
-              src="https://netofun.co.il/wp-content/uploads/2019/07/NetoFun-Logo.png"
+              src="/images/logo.png"
               alt="נטו פאן"
               width={160}
               height={57}
