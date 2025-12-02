@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
 import { IoLogoWhatsapp } from 'react-icons/io5';
+import Image from 'next/image';
 import Container from '@/components/shared/Container';
 import SectionTitle from '@/components/shared/SectionTitle';
 
@@ -73,9 +74,19 @@ export default function LeadForm() {
   };
 
   return (
-    <section id="lead-form" className="py-20 bg-gray-50">
-      <Container size="md">
-        <SectionTitle subtitle="השאירו פרטים ונחזור אליכם עם הצעה מושלמת">
+    <section id="lead-form" className="py-20 relative overflow-hidden">
+      {/* Background Image */}
+      <Image
+        src="/images/party.jpeg"
+        alt="NetoFun Pool Party"
+        fill
+        className="object-cover"
+      />
+      {/* Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      <Container size="md" className="relative z-10">
+        <SectionTitle subtitle="השאירו פרטים ונחזור אליכם עם הצעה מושלמת" light>
           רוצים לשמוע על חופשה?
         </SectionTitle>
 

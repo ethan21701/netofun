@@ -8,6 +8,7 @@ interface SectionTitleProps {
   subtitle?: string;
   centered?: boolean;
   className?: string;
+  light?: boolean;
 }
 
 export default function SectionTitle({
@@ -15,6 +16,7 @@ export default function SectionTitle({
   subtitle,
   centered = true,
   className = '',
+  light = false,
 }: SectionTitleProps) {
   return (
     <motion.div
@@ -24,9 +26,9 @@ export default function SectionTitle({
       transition={{ duration: 0.5 }}
       className={`mb-12 ${centered ? 'text-center' : ''} ${className}`}
     >
-      <h2 className="text-3xl md:text-4xl font-bold mb-4">{children}</h2>
+      <h2 className={`text-3xl md:text-4xl font-bold mb-4 ${light ? 'text-white' : ''}`}>{children}</h2>
       {subtitle && (
-        <p className="text-gray-700 text-lg max-w-2xl mx-auto">{subtitle}</p>
+        <p className={`text-lg max-w-2xl mx-auto ${light ? 'text-white/90' : 'text-gray-700'}`}>{subtitle}</p>
       )}
     </motion.div>
   );
