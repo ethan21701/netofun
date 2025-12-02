@@ -44,7 +44,7 @@ const destinations = [
     name: 'יורט דה מאר',
     country: 'ספרד',
     tagline: 'ריביירה ספרדית לוהטת',
-    image: '/images/destinations/lloret.jpg',
+    image: '/images/destinations/lloret-de-mar.jpg',
     color: 'from-red-500 to-pink-600',
   },
   {
@@ -76,16 +76,13 @@ export default function DestinationsGrid() {
             >
               <Link href={`/destinations/${dest.slug}`} className="group block">
                 <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
-                  {/* Gradient placeholder (will be replaced with actual image) */}
-                  <div className={`absolute inset-0 bg-gradient-to-br ${dest.color}`} />
-
-                  {/* Image would go here when available */}
-                  {/* <Image
+                  {/* Background Image */}
+                  <Image
                     src={dest.image}
                     alt={dest.name}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
-                  /> */}
+                  />
 
                   {/* Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />

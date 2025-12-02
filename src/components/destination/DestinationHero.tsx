@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Destination } from '@/data/destinations';
 
@@ -7,22 +8,29 @@ interface Props {
   destination: Destination;
 }
 
+const destinationImages: Record<string, string> = {
+  'ayia-napa': '/images/destinations/ayia-napa.jpg',
+  'malia': '/images/destinations/malia.jpg',
+  'rhodes': '/images/destinations/rhodes.jpg',
+  'sunny-beach': '/images/destinations/sunny-beach.jpg',
+  'lloret-de-mar': '/images/destinations/lloret-de-mar.jpg',
+  'eilat': '/images/destinations/eilat.jpg',
+};
+
 export default function DestinationHero({ destination }: Props) {
   return (
     <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
-      {/* Background gradient */}
-      <div className={`absolute inset-0 bg-gradient-to-br ${destination.color}`} />
-
-      {/* Pattern overlay */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute inset-0" style={{
-          backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-          backgroundSize: '32px 32px'
-        }} />
-      </div>
+      {/* Background Image */}
+      <Image
+        src={destinationImages[destination.slug]}
+        alt={destination.name}
+        fill
+        className="object-cover"
+        priority
+      />
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/40 to-black/30" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4">
@@ -32,10 +40,16 @@ export default function DestinationHero({ destination }: Props) {
           transition={{ duration: 0.8 }}
         >
           <p className="text-lg mb-4 opacity-90">{destination.country}</p>
-          <h1 className="text-5xl md:text-7xl font-black mb-6">
+          <h1
+            className="text-5xl md:text-7xl font-black mb-6"
+            style={{ textShadow: '0 2px 8px rgba(0,0,0,0.5)' }}
+          >
             {destination.name}
           </h1>
-          <p className="text-xl md:text-2xl font-light max-w-2xl mx-auto">
+          <p
+            className="text-xl md:text-2xl font-light max-w-2xl mx-auto"
+            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+          >
             {destination.tagline}
           </p>
         </motion.div>

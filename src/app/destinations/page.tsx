@@ -1,8 +1,18 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { destinations } from '@/data/destinations';
 import Container from '@/components/shared/Container';
 import SectionTitle from '@/components/shared/SectionTitle';
+
+const destinationImages: Record<string, string> = {
+  'ayia-napa': '/images/destinations/ayia-napa.jpg',
+  'malia': '/images/destinations/malia.jpg',
+  'rhodes': '/images/destinations/rhodes.jpg',
+  'sunny-beach': '/images/destinations/sunny-beach.jpg',
+  'lloret-de-mar': '/images/destinations/lloret-de-mar.jpg',
+  'eilat': '/images/destinations/eilat.jpg',
+};
 
 export const metadata: Metadata = {
   title: 'היעדים שלנו | נטו פאן',
@@ -25,7 +35,12 @@ export default function DestinationsPage() {
               className="group block"
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
-                <div className={`absolute inset-0 bg-gradient-to-br ${dest.color}`} />
+                <Image
+                  src={destinationImages[dest.slug]}
+                  alt={dest.name}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
 
                 <div className="absolute bottom-0 right-0 left-0 p-8 text-white">
