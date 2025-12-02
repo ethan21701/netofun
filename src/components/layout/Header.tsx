@@ -4,17 +4,37 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaPlane, FaBox, FaStar, FaUsers, FaPhone } from 'react-icons/fa';
 import Container from '@/components/shared/Container';
 
 const navLinks = [
-  { href: '/', label: 'דף הבית' },
-  { href: '/destinations', label: 'היעדים שלנו' },
-  { href: '/packages', label: 'חבילות' },
-  { href: '/why-netofun', label: 'למה נטו פאן?' },
-  { href: '/parents', label: 'אזור הורים' },
-  { href: '/contact', label: 'צור קשר' },
+  { href: '/', label: 'דף הבית', icon: FaHome },
+  { href: '/destinations', label: 'היעדים שלנו', icon: FaPlane },
+  { href: '/packages', label: 'חבילות', icon: FaBox },
+  { href: '/why-netofun', label: 'למה נטו פאן?', icon: FaStar },
+  { href: '/parents', label: 'אזור הורים', icon: FaUsers },
+  { href: '/contact', label: 'צור קשר', icon: FaPhone },
 ];
+
+const drawerVariants = {
+  closed: { x: '100%' },
+  open: { x: 0, transition: { type: 'spring' as const, stiffness: 300, damping: 30 } }
+};
+
+const backdropVariants = {
+  closed: { opacity: 0 },
+  open: { opacity: 1 }
+};
+
+const menuVariants = {
+  closed: { opacity: 0 },
+  open: { opacity: 1, transition: { staggerChildren: 0.07, delayChildren: 0.2 } }
+};
+
+const itemVariants = {
+  closed: { opacity: 0, x: 20 },
+  open: { opacity: 1, x: 0 }
+};
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,6 +48,17 @@ export default function Header() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
 
   return (
     <header
@@ -73,30 +104,73 @@ export default function Header() {
         </nav>
       </Container>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Side Drawer */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t"
-          >
-            <Container>
-              <div className="py-4 space-y-2">
+          <>
+            {/* Backdrop */}
+            <motion.div
+              variants={backdropVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="lg:hidden fixed inset-0 bg-black/50 z-40"
+            />
+
+            {/* Drawer */}
+            <motion.div
+              variants={drawerVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              className="lg:hidden fixed top-0 right-0 bottom-0 w-[80%] max-w-[320px] z-50"
+              style={{
+                background: 'linear-gradient(180deg, #9333ea 0%, #7c3aed 50%, #6b21a8 100%)'
+              }}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="absolute top-6 left-6 p-2 text-white/80 hover:text-white transition-colors"
+                aria-label="Close menu"
+              >
+                <FaTimes size={24} />
+              </button>
+
+              {/* Nav Links */}
+              <motion.nav
+                variants={menuVariants}
+                initial="closed"
+                animate="open"
+                className="flex flex-col pt-20 px-8"
+              >
                 {navLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-3 px-4 text-gray-700 font-medium hover:bg-gray-50 rounded-lg transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+                  <motion.div key={link.href} variants={itemVariants}>
+                    <Link
+                      href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
+                      className="flex items-center gap-4 py-4 text-white text-xl font-bold hover:text-yellow-400 transition-colors"
+                    >
+                      <link.icon className="text-yellow-400 text-lg" />
+                      {link.label}
+                    </Link>
+                  </motion.div>
                 ))}
-              </div>
-            </Container>
-          </motion.div>
+
+                {/* CTA Button */}
+                <motion.div variants={itemVariants} className="mt-8">
+                  <a
+                    href="tel:*6599"
+                    className="flex items-center justify-center gap-3 w-full py-4 bg-yellow-400 text-purple-900 font-bold text-lg rounded-xl hover:bg-yellow-300 transition-colors"
+                  >
+                    <FaPhone />
+                    התקשרו עכשיו
+                  </a>
+                </motion.div>
+              </motion.nav>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </header>
