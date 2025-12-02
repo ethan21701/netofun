@@ -99,7 +99,8 @@ export default function Header() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden fixed inset-0 top-20 z-40 bg-gradient-to-br from-primary-600 via-purple-600 to-purple-700"
+            className="lg:hidden fixed inset-0 top-20 z-40"
+            style={{ background: 'linear-gradient(135deg, #9333ea 0%, #7c3aed 50%, #6b21a8 100%)' }}
           >
             <motion.div
               variants={menuVariants}
