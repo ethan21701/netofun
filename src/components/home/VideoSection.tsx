@@ -4,7 +4,7 @@ import Container from '@/components/shared/Container';
 
 export default function VideoSection() {
   return (
-    <section className="py-16 bg-gray-900">
+    <section className="py-20 bg-gray-50">
       <Container>
         <div className="max-w-4xl mx-auto">
           <div className="relative w-full aspect-video rounded-2xl overflow-hidden shadow-2xl">
