@@ -50,7 +50,7 @@ export default function TestimonialsCarousel() {
   };
 
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-br from-primary-50 via-white to-gray-50">
       <Container>
         <SectionTitle subtitle="מה אומרים עלינו אלפי הצעירים שטסו איתנו">
           אומרים עלינו

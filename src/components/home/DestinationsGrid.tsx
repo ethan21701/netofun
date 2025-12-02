@@ -19,7 +19,7 @@ const destinations = destinationsData.map(dest => ({
 
 export default function DestinationsGrid() {
   return (
-    <section className="py-20">
+    <section className="py-20 bg-gradient-to-br from-primary-50/30 via-white to-gray-50">
       <Container>
         <SectionTitle subtitle="בחרו את היעד המושלם לחופשה הבאה שלכם">
           היעדים שלנו
