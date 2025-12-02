@@ -92,7 +92,7 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="lg:hidden overflow-hidden bg-gradient-to-b from-purple-600 via-purple-700 to-purple-900"
           >
             <motion.nav
