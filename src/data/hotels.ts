@@ -88,6 +88,42 @@ export const hotels: Hotel[] = [
     mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.8!2d34.0!3d34.98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDU4JzQ4LjAiTiAzNMKwMDAnMDAuMCJF!5e0!3m2!1sen!2sil!4v1234567890',
     starRating: 4,
   },
+  {
+    slug: 'ibiscus-hotel-malia',
+    name: 'Ibiscus Hotel Malia',
+    destination: 'malia',
+    destinationName: 'מאליה',
+    heroImage: '/images/hotels/ibiscus.jpg',
+    intro: 'מלון איביסקוס מאליה הוא הבחירה המושלמת לחופשת צעירים בכרתים! המלון מציע בריכת שחייה חיצונית, גינה ירוקה וטרסה מרווחת. ממוקם במרחק קצר מחוף איקרוס ומרצועת המסיבות של מאליה - הכל נגיש ברגל!',
+    roomAmenities: [
+      'מיזוג אוויר',
+      'שולחן עבודה',
+      'מקלחת פרטית',
+      'מצעים ומגבות',
+      'חדר רחצה פרטי',
+    ],
+    services: [
+      { icon: '🏊', title: 'בריכה', description: 'בריכת שחייה חיצונית בעונה' },
+      { icon: '🌿', title: 'גינה', description: 'גינה ירוקה להירגע בין המסיבות' },
+      { icon: '📶', title: 'WiFi', description: 'אינטרנט אלחוטי חינם בכל המלון' },
+      { icon: '🍳', title: 'ארוחת בוקר', description: 'ארוחת בוקר קונטיננטלית' },
+      { icon: '🍽️', title: 'מסעדה', description: 'מסעדה במקום' },
+      { icon: '🚗', title: 'השכרת רכב', description: 'שירות השכרת רכב במלון' },
+    ],
+    youthAdvantages: [
+      'מחיר נוח במיוחד - מושלם לתקציב צעיר',
+      'קרוב לרצועת המסיבות של מאליה',
+      '1.2 ק"מ מחוף איקרוס המדהים',
+      'בריכה לצינון אחרי לילות ארוכים',
+      'אווירה רגועה לנוח ביום',
+    ],
+    gallery: [
+      '/images/hotels/167851817.jpg',
+      '/images/hotels/167850351.jpg',
+    ],
+    mapEmbed: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3236.8!2d25.46!3d35.29!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzXCsDE3JzI0LjAiTiAyNcKwMjcnMzYuMCJF!5e0!3m2!1sen!2sil!4v1234567890',
+    starRating: 2,
+  },
 ];
 
 export function getHotelBySlug(slug: string): Hotel | undefined {
