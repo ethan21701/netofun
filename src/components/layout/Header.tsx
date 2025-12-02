@@ -44,7 +44,7 @@ export default function Header() {
       }`}
     >
       <Container>
-        <nav className="flex items-center justify-between h-20 px-2">
+        <nav dir="ltr" className="flex items-center justify-between h-20 px-2">
           {/* Logo */}
           <Link href="/" className="flex items-center h-full">
             <Image
