@@ -26,17 +26,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          {/* Logo */}
-          <Image
-            src="/images/logo.png"
-            alt="נטו פאן"
-            width={280}
-            height={100}
-            className="h-20 md:h-28 w-auto mx-auto mb-8 drop-shadow-lg"
-            priority
-          />
-
-          <h1
+<h1
             className="text-4xl md:text-6xl font-black mb-6 leading-tight"
             style={{ textShadow: '0 4px 8px rgba(0,0,0,0.5)' }}
           >
