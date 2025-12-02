@@ -44,7 +44,7 @@ export default function Header() {
       }`}
     >
       <Container>
-        <nav dir="rtl" className="flex items-center justify-between h-20 px-2">
+        <nav className="flex items-center justify-between h-20 px-2">
           {/* Logo */}
           <Link href="/" className="flex items-center h-full">
             <Image
@@ -58,7 +58,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center h-full gap-6">
+          <div dir="rtl" className="hidden lg:flex items-center h-full gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
