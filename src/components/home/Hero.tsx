@@ -60,6 +60,17 @@ export default function Hero() {
           </Link>
         </div>
       </div>
+
+      {/* Decorative Plane */}
+      <div className="absolute bottom-8 left-0 right-0 z-10 pointer-events-none">
+        <Image
+          src="/images/מטוס-נטופאן-1024x323.png"
+          alt=""
+          width={300}
+          height={95}
+          className="mx-auto opacity-90 drop-shadow-2xl"
+        />
+      </div>
     </section>
   );
 }
