@@ -6,56 +6,16 @@ import Link from 'next/link';
 import Container from '@/components/shared/Container';
 import SectionTitle from '@/components/shared/SectionTitle';
 
-const destinations = [
-  {
-    slug: 'ayia-napa',
-    name: 'איה נאפה',
-    country: 'קפריסין',
-    tagline: 'בירת המסיבות של קפריסין',
-    image: '/images/destinations/ayia-napa.jpg',
-    color: 'from-cyan-500 to-blue-600',
-  },
-  {
-    slug: 'malia',
-    name: 'מאליה',
-    country: 'יוון',
-    tagline: 'חוויה יוונית בלתי נשכחת',
-    image: '/images/destinations/malia.jpg',
-    color: 'from-blue-500 to-indigo-600',
-  },
-  {
-    slug: 'rhodes',
-    name: 'רודוס',
-    country: 'יוון',
-    tagline: 'האי המושלם לקיץ',
-    image: '/images/destinations/rhodes.jpg',
-    color: 'from-amber-500 to-orange-600',
-  },
-  {
-    slug: 'sunny-beach',
-    name: 'סאני ביץ׳',
-    country: 'בולגריה',
-    tagline: 'חופים זהובים ומחירים נוחים',
-    image: '/images/destinations/sunny-beach.jpg',
-    color: 'from-yellow-500 to-amber-600',
-  },
-  {
-    slug: 'lloret-de-mar',
-    name: 'יורט דה מאר',
-    country: 'ספרד',
-    tagline: 'ריביירה ספרדית לוהטת',
-    image: '/images/destinations/lloret-de-mar.jpg',
-    color: 'from-red-500 to-pink-600',
-  },
-  {
-    slug: 'eilat',
-    name: 'אילת',
-    country: 'ישראל',
-    tagline: 'פינוק ישראלי במפרץ',
-    image: '/images/destinations/eilat.jpg',
-    color: 'from-teal-500 to-emerald-600',
-  },
-];
+import { destinations as destinationsData } from '@/data/destinations';
+
+const destinations = destinationsData.map(dest => ({
+  slug: dest.slug,
+  name: dest.name,
+  country: dest.country,
+  tagline: dest.tagline,
+  image: dest.heroImage,
+  color: dest.color,
+}));
 
 export default function DestinationsGrid() {
   return (

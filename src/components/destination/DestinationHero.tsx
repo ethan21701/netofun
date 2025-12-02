@@ -8,21 +8,12 @@ interface Props {
   destination: Destination;
 }
 
-const destinationImages: Record<string, string> = {
-  'ayia-napa': '/images/destinations/ayia-napa.jpg',
-  'malia': '/images/destinations/malia.jpg',
-  'rhodes': '/images/destinations/rhodes.jpg',
-  'sunny-beach': '/images/destinations/sunny-beach.jpg',
-  'lloret-de-mar': '/images/destinations/lloret-de-mar.jpg',
-  'eilat': '/images/destinations/eilat.jpg',
-};
-
 export default function DestinationHero({ destination }: Props) {
   return (
     <section className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <Image
-        src={destinationImages[destination.slug]}
+        src={destination.heroImage}
         alt={destination.name}
         fill
         className="object-cover"

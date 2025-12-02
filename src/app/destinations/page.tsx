@@ -5,15 +5,6 @@ import { destinations } from '@/data/destinations';
 import Container from '@/components/shared/Container';
 import SectionTitle from '@/components/shared/SectionTitle';
 
-const destinationImages: Record<string, string> = {
-  'ayia-napa': '/images/destinations/ayia-napa.jpg',
-  'malia': '/images/destinations/malia.jpg',
-  'rhodes': '/images/destinations/rhodes.jpg',
-  'sunny-beach': '/images/destinations/sunny-beach.jpg',
-  'lloret-de-mar': '/images/destinations/lloret-de-mar.jpg',
-  'eilat': '/images/destinations/eilat.jpg',
-};
-
 export const metadata: Metadata = {
   title: 'היעדים שלנו | נטו פאן',
   description: 'גלו את כל היעדים המדהימים של נטו פאן - איה נאפה, מאליה, רודוס, סאני ביץ, יורט דה מאר ואילת.',
@@ -36,7 +27,7 @@ export default function DestinationsPage() {
             >
               <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
                 <Image
-                  src={destinationImages[dest.slug]}
+                  src={dest.heroImage}
                   alt={dest.name}
                   fill
                   className="object-cover group-hover:scale-110 transition-transform duration-500"

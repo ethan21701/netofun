@@ -30,7 +30,7 @@ export const destinations: Destination[] = [
     name: 'איה נאפה',
     country: 'קפריסין',
     tagline: 'האיביזה של הים התיכון - הכל מתחיל בכיכר',
-    heroImage: '/images/destinations/ayia-napa-hero.jpg',
+    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
     description: 'איה נאפה היא בירת המסיבות של קפריסין והיעד הכי פרוע בים התיכון! העיירה נקראת "האיביזה הקפריסאית" בזכות חיי הלילה המטורפים שלה. בניגוד ליעדים אחרים, באיה נאפה אין רחוב מסיבות - יש כיכר מסיבות! כיכר איה נאפה (Ayia Napa Square) היא המרכז של הכל, עמוסה בברים, מועדונים ומסעדות. המועדונים נפתחים בחצות ונסגרים אחרי 5 בבוקר.',
     suitableFor: [
       'אחרי בגרויות',
@@ -51,13 +51,13 @@ export const destinations: Destination[] = [
     ],
     hotels: ['napa-plaza', 'nestor-hotel', 'callisto-village'],
     gallery: [
-      '/images/ayanapa.jpg',
-      '/images/napa2.jpg',
-      '/images/Napa4.jpg',
-      '/images/Napa5.jpg',
-      '/images/Napa7.jpg',
-      '/images/destinations/gallery/ayia-napa-1.jpg',
-      '/images/destinations/gallery/ayia-napa-2.jpg',
+      '/images/destinations/ayianapa/ayanapa.jpg',
+      '/images/destinations/ayianapa/napa2.jpg',
+      '/images/destinations/ayianapa/Napa4.jpg',
+      '/images/destinations/ayianapa/Napa5.jpg',
+      '/images/destinations/ayianapa/Napa7.jpg',
+      '/images/destinations/ayianapa/ayia-napa.jpg',
+      '/images/destinations/ayianapa/ayia-napa-2.jpg',
     ],
     faq: [
       {
@@ -88,7 +88,7 @@ export const destinations: Destination[] = [
     name: 'מאליה',
     country: 'יוון',
     tagline: 'הרצועה היוונית - 1.5 ק״מ של הנאה טהורה',
-    heroImage: '/images/destinations/malia-hero.jpg',
+    heroImage: '/images/destinations/malia/maliaparty.jpg',
     description: 'מאליה בכרתים היא גן עדן לצעירים מכל אירופה! הלב של מאליה הוא "הרצועה" (The Malia Strip) - רחוב הולכי רגל באורך 1.5 ק"מ שישן ביום ומתעורר בלילה. מרחוב דימוקרטיאס ועד לחוף - הכל עמוס בברים ומועדונים עם מוזיקה מכל הסוגים. הכניסה לרוב המקומות חינם - משלמים רק על שתייה!',
     suitableFor: [
       'אחרי בגרויות',
@@ -108,11 +108,9 @@ export const destinations: Destination[] = [
     ],
     hotels: ['malia-holidays', 'malia-central'],
     gallery: [
-      '/images/maliaparty.jpg',
-      '/images/מאליה-אתר.jpg',
-      '/images/מאליה-אתר-2.jpg',
-      '/images/destinations/gallery/malia-1.jpg',
-      '/images/destinations/gallery/malia-2.jpg',
+      '/images/destinations/malia/maliaparty.jpg',
+      '/images/destinations/malia/מאליה-אתר.jpg',
+      '/images/destinations/malia/מאליה-אתר-2.jpg',
     ],
     faq: [
       {
@@ -139,7 +137,7 @@ export const destinations: Destination[] = [
     name: 'רודוס',
     country: 'יוון',
     tagline: 'פאליראקי - רחוב הברים האגדי',
-    heroImage: '/images/destinations/rhodes-hero.jpg',
+    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
     description: 'רודוס הוא שילוב מושלם של היסטוריה, חופים ומסיבות! האזור הכי לוהט הוא פאליראקי (Faliraki) - עיירת החוף עם רחוב הברים האגדי. Bar Street ו-Club Street הם הלב הפועם - מלאים באורות מהבהבים, מוזיקה רועמת ואווירת מסיבה יוונית אמיתית. אם מגלוף היא הגרסה הספרדית, פאליראקי היא הגרסה היוונית!',
     suitableFor: [
       'אחרי בגרויות',
@@ -157,10 +155,7 @@ export const destinations: Destination[] = [
       { icon: '🏛️', title: 'עיר עתיקה', description: 'סיורים בעיר העתיקה של רודוס (אתר UNESCO)' },
     ],
     hotels: ['rhodes-beach'],
-    gallery: [
-      '/images/destinations/gallery/rhodes-1.jpg',
-      '/images/destinations/gallery/rhodes-2.jpg',
-    ],
+    gallery: [],
     faq: [
       {
         question: 'מהם המקומות הכי טובים בפאליראקי?',
@@ -182,7 +177,7 @@ export const destinations: Destination[] = [
     name: 'סאני ביץ׳',
     country: 'בולגריה',
     tagline: 'הוגאס הבולגרית - הכל BIG',
-    heroImage: '/images/destinations/sunny-beach-hero.jpg',
+    heroImage: '/images/destinations/sunnybeach/sunny-beach.jpg',
     description: 'סאני ביץ׳ היא עיירת חוף בולגרית שנמצאת בבורגס המפורסמת. בהשוואה לאיה נאפה - הכל BIG: חופים יותר גדולים, מלונות יותר גדולים, כמות אנשים יותר גדולה. סאני ביץ׳ היא הוגאס הבולגרית! כולם מחייכים, כולם רוצים ליהנות, כולם פשוט שם כדי להוציא את המקסימום מהחיים. תתכוננו לימים מלאים באטרקציות, טיולי שטח ומסאז׳, מסיבות צהריים מדהימות, וכל ערב יציאה אירופאית ברמה הכי גבוהה.',
     suitableFor: [
       'אחרי בגרויות',
@@ -202,9 +197,10 @@ export const destinations: Destination[] = [
     ],
     hotels: ['sunny-beach-hotel'],
     gallery: [
-      '/images/Sani Beach.jpg',
-      '/images/destinations/gallery/sunny-beach-1.jpg',
-      '/images/destinations/gallery/sunny-beach-2.jpg',
+      '/images/destinations/sunnybeach/Sani Beach.jpg',
+      '/images/destinations/sunnybeach/sunny-beach.jpg',
+      '/images/destinations/sunnybeach/אתר-סאני-ביץ-2.jpg',
+      '/images/destinations/sunnybeach/אתר-סאני-ביץ-5.jpg',
     ],
     faq: [
       {
@@ -231,7 +227,7 @@ export const destinations: Destination[] = [
     name: 'יורט דה מאר',
     country: 'ספרד',
     tagline: 'בירת חיי הלילה של קוסטה בראווה',
-    heroImage: '/images/destinations/lloret-hero.jpg',
+    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
     description: 'יורט דה מאר היא עיר המסיבות של קוסטה בראווה! עם יותר מ-300 מקומות בילוי, זו בירת חיי הלילה של החוף הספרדי. הרצועה הראשית (Av. Just Marles Vilarrodonna) עמוסה במועדונים ענקיים - חלקם מהגדולים באירופה! היתרון הגדול: תמורה מעולה למחיר בהשוואה ליעדים אחרים בספרד, וקרבה לברצלונה לטיולי יום.',
     suitableFor: [
       'אחרי צבא',
@@ -248,10 +244,7 @@ export const destinations: Destination[] = [
       { icon: '🏙️', title: 'טיול לברצלונה', description: 'קרוב מאוד ליום טיול מושלם' },
     ],
     hotels: ['lloret-hotel'],
-    gallery: [
-      '/images/destinations/gallery/lloret-1.jpg',
-      '/images/destinations/gallery/lloret-2.jpg',
-    ],
+    gallery: [],
     faq: [
       {
         question: 'מהם המועדונים הכי מפורסמים?',
@@ -277,7 +270,7 @@ export const destinations: Destination[] = [
     name: 'אילת',
     country: 'ישראל',
     tagline: 'עיר המסיבות של ישראל - בלי דרכון!',
-    heroImage: '/images/destinations/eilat-hero.jpg',
+    heroImage: '/images/destinations/ayianapa/ayanapa.jpg',
     description: 'אילת היא עיר הנופש והמסיבות של ישראל! שמש כל השנה, ים סוף מדהים, ומסיבות שלא נגמרות. היתרון הכי גדול? הכל בלי דרכון, בלי טיסות ארוכות, בלי החלפת כסף. המועדונים הגדולים כמו סלינה מזכירים את איביזה או לאס וגאס - במה ענקית, לייזרים ואש, ורוקדים עד הזריחה!',
     suitableFor: [
       'אחרי בגרויות',
@@ -294,10 +287,7 @@ export const destinations: Destination[] = [
       { icon: '🏖️', title: 'מסיבות חוף', description: 'מסיבות בחופי טאבא ודקל' },
     ],
     hotels: ['eilat-hotel'],
-    gallery: [
-      '/images/destinations/gallery/eilat-1.jpg',
-      '/images/destinations/gallery/eilat-2.jpg',
-    ],
+    gallery: [],
     faq: [
       {
         question: 'מהם המועדונים הכי טובים באילת?',
