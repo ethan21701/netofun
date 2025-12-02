@@ -64,8 +64,14 @@ export default function Hero() {
       {/* Plane Button */}
       <Link
         href="/destinations"
-        className="absolute bottom-8 left-0 right-0 z-10 flex justify-center group"
+        className="absolute bottom-8 left-0 right-0 z-10 flex flex-col items-center group"
       >
+        <span
+          className="text-white font-bold text-lg mb-2 transition-transform duration-300 group-hover:-translate-y-2"
+          style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+        >
+          לאן טסים?
+        </span>
         <Image
           src="/images/מטוס-נטופאן-1024x323.png"
           alt="לכל היעדים שלנו"
