@@ -126,7 +126,7 @@ export default function Header() {
               initial="closed"
               animate="open"
               exit="closed"
-              className="lg:hidden fixed top-0 right-0 w-[80%] max-w-[320px] h-[100dvh] z-50 bg-gradient-to-b from-purple-600 via-purple-700 to-purple-900"
+              className="lg:hidden fixed inset-y-0 right-0 w-[70%] max-w-[280px] z-50 bg-gradient-to-b from-purple-600 via-purple-700 to-purple-900"
             >
               {/* Close Button */}
               <button
