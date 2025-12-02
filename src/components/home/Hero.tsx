@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40" />
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto pb-32 md:pb-0">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,7 +70,7 @@ export default function Hero() {
       {/* Plane Button */}
       <Link
         href="/destinations"
-        className="absolute bottom-8 left-0 right-0 z-10 flex flex-col items-center group"
+        className="absolute bottom-4 md:bottom-8 left-0 right-0 z-10 flex flex-col items-center group"
       >
         <span
           className="text-white font-bold text-lg mb-2 transition-transform duration-300 group-hover:-translate-y-2"
@@ -83,7 +83,7 @@ export default function Hero() {
           alt="לכל היעדים שלנו"
           width={300}
           height={95}
-          className="opacity-90 drop-shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2"
+          className="w-48 md:w-auto opacity-90 drop-shadow-2xl transition-transform duration-300 group-hover:scale-110 group-hover:-translate-y-2"
         />
       </Link>
     </section>
