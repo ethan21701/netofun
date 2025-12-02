@@ -99,7 +99,7 @@ export default function ParentsPage() {
   return (
     <div className="pt-24">
       {/* Hero */}
-      <section className="py-20 bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <section className="py-20 bg-gradient-to-br from-blue-700 to-blue-900 text-white">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -128,10 +128,10 @@ export default function ParentsPage() {
                 transition={{ delay: index * 0.1 }}
                 className="text-center"
               >
-                <div className="w-12 h-12 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <stat.icon className="text-primary-600 text-xl" />
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <stat.icon className="text-blue-600 text-xl" />
                 </div>
-                <div className="text-3xl md:text-4xl font-bold text-primary-700">
+                <div className="text-3xl md:text-4xl font-bold text-blue-700">
                   <AnimatedCounter value={stat.value} suffix={stat.suffix} />
                 </div>
                 <div className="text-gray-600 text-sm mt-1">{stat.label}</div>
@@ -177,8 +177,8 @@ export default function ParentsPage() {
                 transition={{ delay: index * 0.1 }}
                 className="bg-white p-8 rounded-2xl shadow-lg"
               >
-                <div className="w-14 h-14 bg-primary-100 rounded-xl flex items-center justify-center mb-6">
-                  <feature.icon className="text-primary-600 text-2xl" />
+                <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                  <feature.icon className="text-blue-600 text-2xl" />
                 </div>
                 <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
                 <p className="text-gray-700 leading-relaxed">{feature.description}</p>
@@ -202,7 +202,7 @@ export default function ParentsPage() {
                 transition={{ delay: index * 0.05 }}
                 className="bg-white p-6 rounded-xl shadow-sm"
               >
-                <h3 className="font-bold text-lg mb-3 text-primary-700">{faq.question}</h3>
+                <h3 className="font-bold text-lg mb-3 text-blue-700">{faq.question}</h3>
                 <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
               </motion.div>
             ))}
@@ -219,14 +219,14 @@ export default function ParentsPage() {
               href="/terms"
               className="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             >
-              <FaFileAlt className="text-primary-600 text-xl" />
+              <FaFileAlt className="text-blue-600 text-xl" />
               <span className="font-medium">תקנון החברה</span>
             </Link>
             <Link
               href="/privacy"
               className="flex items-center gap-4 bg-white p-5 rounded-xl shadow-sm hover:shadow-md transition-shadow"
             >
-              <FaFileAlt className="text-primary-600 text-xl" />
+              <FaFileAlt className="text-blue-600 text-xl" />
               <span className="font-medium">מדיניות פרטיות</span>
             </Link>
           </div>
@@ -234,7 +234,7 @@ export default function ParentsPage() {
       </section>
 
       {/* Contact CTA */}
-      <section className="py-16 bg-primary-600 text-white">
+      <section className="py-16 bg-blue-600 text-white">
         <Container>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -247,7 +247,7 @@ export default function ParentsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:03-379-6666"
-                className="inline-flex items-center justify-center gap-2 bg-white text-primary-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-8 py-4 rounded-full font-bold hover:bg-gray-100 transition-colors"
               >
                 <FaPhone />
                 03-379-6666
@@ -256,7 +256,7 @@ export default function ParentsPage() {
                 href="https://wa.me/972515699420?text=שלום, אני הורה ויש לי שאלות לגבי החופשות שלכם"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-primary-700 text-white px-8 py-4 rounded-full font-bold hover:bg-primary-800 transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-blue-700 text-white px-8 py-4 rounded-full font-bold hover:bg-blue-800 transition-colors"
               >
                 <FaWhatsapp />
                 וואטסאפ

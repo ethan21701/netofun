@@ -10,25 +10,26 @@ const features = [
     icon: FaUsers,
     title: 'נציגים כמו משפחה',
     description: 'נציגים ישראלים 24/7 שידאגו לכם לכל אורך החופשה',
-    color: 'bg-blue-500',
+    color: 'bg-purple-500',
   },
   {
     icon: FaMusic,
     title: 'מסיבות ואירועים',
     description: 'חוויה מטורפת עם המסיבות הכי טובות בכל יעד',
-    color: 'bg-pink-500',
+    color: 'bg-yellow-400',
+    textColor: 'text-gray-800',
   },
   {
     icon: FaShieldAlt,
     title: 'שקט להורים',
     description: 'ליווי מלא ובקרת בטיחות לאורך כל הטיול',
-    color: 'bg-green-500',
+    color: 'bg-blue-500',
   },
   {
     icon: FaMedal,
     title: 'ניסיון של מעל עשור',
     description: 'אלפי מטיילים מרוצים בחרו בנו שנה אחרי שנה',
-    color: 'bg-amber-500',
+    color: 'bg-purple-600',
   },
 ];
 
@@ -55,7 +56,7 @@ export default function WhyNetofun() {
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 className={`w-24 h-24 ${feature.color} rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg`}
               >
-                <feature.icon className="text-white text-4xl" />
+                <feature.icon className={`${(feature as { textColor?: string }).textColor || 'text-white'} text-4xl`} />
               </motion.div>
               <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
               <p className="text-gray-600 leading-relaxed">{feature.description}</p>
