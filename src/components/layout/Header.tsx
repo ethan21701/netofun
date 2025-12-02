@@ -47,7 +47,7 @@ export default function Header() {
       {/* Top Bar */}
       <div className="bg-white/95 backdrop-blur-sm">
         <Container>
-          <nav dir="ltr" className="flex items-center justify-between h-20 px-2">
+          <nav dir="ltr" className="relative flex items-center justify-between h-20 px-2">
             {/* Logo */}
             <Link href="/" className="flex items-center h-full">
               <Image
@@ -61,7 +61,7 @@ export default function Header() {
             </Link>
 
             {/* Desktop Navigation */}
-            <div dir="rtl" className="hidden lg:flex items-center h-full gap-6">
+            <div dir="rtl" className="hidden lg:flex items-center justify-center h-full gap-6 absolute inset-x-0">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
