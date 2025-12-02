@@ -61,50 +61,52 @@ export default function Header() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm ${
-        isScrolled ? 'shadow-lg' : ''
-      }`}
-    >
-      <Container>
-        <nav dir="ltr" className="flex items-center justify-between h-20 px-2">
-          {/* Logo */}
-          <Link href="/" className="flex items-center h-full">
-            <Image
-              src="/images/logo.png"
-              alt="נטו פאן"
-              width={140}
-              height={50}
-              className="h-10 w-auto"
-              priority
-            />
-          </Link>
+    <>
+      <header
+        className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm ${
+          isScrolled ? 'shadow-lg' : ''
+        }`}
+      >
+        <Container>
+          <nav dir="ltr" className="flex items-center justify-between h-20 px-2">
+            {/* Logo */}
+            <Link href="/" className="flex items-center h-full">
+              <Image
+                src="/images/logo.png"
+                alt="נטו פאן"
+                width={140}
+                height={50}
+                className="h-10 w-auto"
+                priority
+              />
+            </Link>
 
-          {/* Desktop Navigation */}
-          <div dir="rtl" className="hidden lg:flex items-center h-full gap-6">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="flex items-center h-full font-medium text-gray-800 transition-colors hover:text-primary-500"
-              >
-                {link.label}
-              </Link>
-            ))}
-          </div>
+            {/* Desktop Navigation */}
+            <div dir="rtl" className="hidden lg:flex items-center h-full gap-6">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center h-full font-medium text-gray-800 transition-colors hover:text-primary-500"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-2 rounded-lg text-gray-800"
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-          </button>
-        </nav>
-      </Container>
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden p-2 rounded-lg text-gray-800"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+            </button>
+          </nav>
+        </Container>
+      </header>
 
-      {/* Mobile Menu - Side Drawer */}
+      {/* Mobile Menu - Side Drawer (outside header to avoid stacking context issues) */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <>
@@ -170,6 +172,6 @@ export default function Header() {
           </>
         )}
       </AnimatePresence>
-    </header>
+    </>
   );
 }
