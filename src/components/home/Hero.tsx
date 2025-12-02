@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
@@ -20,7 +21,11 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           {/* Logo */}
           <Image
             src="/images/logo.png"
@@ -31,19 +36,20 @@ export default function Hero() {
             priority
           />
 
-          <p
-            className="text-xl md:text-3xl font-medium mb-4"
-            style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
+          <h1
+            className="text-4xl md:text-6xl font-black mb-6 leading-tight"
+            style={{ textShadow: '0 4px 8px rgba(0,0,0,0.5)' }}
           >
-            החברה המרכזית לתיירות צעירים!
-          </p>
+            לא משנה לאן העיקר שיהיה{' '}
+            <span className="text-yellow-400">פאן</span>
+          </h1>
           <p
-            className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl mx-auto tracking-wide"
             style={{ textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}
           >
             איה נאפה • מאליה • רודוס • סאני ביץ׳ • יורט דה מאר • אילת
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
