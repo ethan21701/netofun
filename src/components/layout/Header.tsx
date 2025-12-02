@@ -44,26 +44,26 @@ export default function Header() {
       }`}
     >
       <Container>
-        <nav className="flex items-center justify-between h-20">
+        <nav className="flex items-center justify-between h-20 px-2">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <Link href="/" className="flex items-center h-full">
             <Image
               src="/images/logo.png"
               alt="נטו פאן"
-              width={160}
-              height={60}
-              className="h-12 w-auto"
+              width={140}
+              height={50}
+              className="h-10 w-auto"
               priority
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-8">
+          <div className="hidden lg:flex items-center h-full gap-6">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="font-medium text-gray-800 transition-colors hover:text-primary-500"
+                className="flex items-center h-full font-medium text-gray-800 transition-colors hover:text-primary-500"
               >
                 {link.label}
               </Link>
