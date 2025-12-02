@@ -8,6 +8,7 @@ import SuitableFor from '@/components/destination/SuitableFor';
 import PackageIncludes from '@/components/destination/PackageIncludes';
 import DestinationFAQ from '@/components/destination/FAQ';
 import DestinationLeadForm from '@/components/destination/DestinationLeadForm';
+import DestinationGallery from '@/components/destination/DestinationGallery';
 
 interface Props {
   params: { slug: string };
@@ -51,6 +52,8 @@ export default function DestinationPage({ params }: Props) {
       <SuitableFor items={destination.suitableFor} />
 
       <PackageIncludes items={destination.packageIncludes} />
+
+      <DestinationGallery images={destination.gallery} destinationName={destination.name} />
 
       {/* Hotels section would go here */}
       <section className="py-16 bg-gray-50">

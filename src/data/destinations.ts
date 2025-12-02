@@ -51,6 +51,11 @@ export const destinations: Destination[] = [
     ],
     hotels: ['napa-plaza', 'nestor-hotel', 'callisto-village'],
     gallery: [
+      '/images/ayanapa.jpg',
+      '/images/napa2.jpg',
+      '/images/Napa4.jpg',
+      '/images/Napa5.jpg',
+      '/images/Napa7.jpg',
       '/images/destinations/gallery/ayia-napa-1.jpg',
       '/images/destinations/gallery/ayia-napa-2.jpg',
     ],
@@ -103,6 +108,9 @@ export const destinations: Destination[] = [
     ],
     hotels: ['malia-holidays', 'malia-central'],
     gallery: [
+      '/images/maliaparty.jpg',
+      '/images/מאליה-אתר.jpg',
+      '/images/מאליה-אתר-2.jpg',
       '/images/destinations/gallery/malia-1.jpg',
       '/images/destinations/gallery/malia-2.jpg',
     ],
@@ -194,6 +202,7 @@ export const destinations: Destination[] = [
     ],
     hotels: ['sunny-beach-hotel'],
     gallery: [
+      '/images/Sani Beach.jpg',
       '/images/destinations/gallery/sunny-beach-1.jpg',
       '/images/destinations/gallery/sunny-beach-2.jpg',
     ],
