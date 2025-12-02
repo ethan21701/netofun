@@ -4,17 +4,27 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaPlane, FaBox, FaStar, FaUsers, FaPhone } from 'react-icons/fa';
 import Container from '@/components/shared/Container';
 
 const navLinks = [
-  { href: '/', label: 'דף הבית' },
-  { href: '/destinations', label: 'היעדים שלנו' },
-  { href: '/packages', label: 'חבילות' },
-  { href: '/why-netofun', label: 'למה נטו פאן?' },
-  { href: '/parents', label: 'אזור הורים' },
-  { href: '/contact', label: 'צור קשר' },
+  { href: '/', label: 'דף הבית', icon: FaHome },
+  { href: '/destinations', label: 'היעדים שלנו', icon: FaPlane },
+  { href: '/packages', label: 'חבילות', icon: FaBox },
+  { href: '/why-netofun', label: 'למה נטו פאן?', icon: FaStar },
+  { href: '/parents', label: 'אזור הורים', icon: FaUsers },
+  { href: '/contact', label: 'צור קשר', icon: FaPhone },
 ];
+
+const menuVariants = {
+  closed: { opacity: 0 },
+  open: { opacity: 1, transition: { staggerChildren: 0.08, delayChildren: 0.1 } }
+};
+
+const itemVariants = {
+  closed: { opacity: 0, y: 20 },
+  open: { opacity: 1, y: 0 }
+};
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -81,29 +91,36 @@ export default function Header() {
         </nav>
       </Container>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Full Screen Overlay */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            className="lg:hidden fixed inset-0 top-20 z-40 bg-gradient-to-br from-primary-600 via-purple-600 to-purple-700"
           >
-            <Container>
-              <div className="py-4 space-y-2">
-                {navLinks.map((link) => (
+            <motion.div
+              variants={menuVariants}
+              initial="closed"
+              animate="open"
+              exit="closed"
+              className="flex flex-col items-center justify-center h-full gap-6 pb-20"
+            >
+              {navLinks.map((link) => (
+                <motion.div key={link.href} variants={itemVariants}>
                   <Link
-                    key={link.href}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block py-3 px-4 text-gray-700 font-medium hover:bg-gray-50 rounded-lg transition-colors"
+                    className="flex items-center gap-4 text-white text-2xl font-bold hover:text-yellow-400 transition-colors"
                   >
+                    <link.icon className="text-yellow-400" />
                     {link.label}
                   </Link>
-                ))}
-              </div>
-            </Container>
+                </motion.div>
+              ))}
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
