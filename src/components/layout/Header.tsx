@@ -53,6 +53,7 @@ export default function Header() {
               width={160}
               height={60}
               className="h-12 w-auto"
+              style={{ filter: 'brightness(0) saturate(100%) invert(41%) sepia(98%) saturate(2474%) hue-rotate(280deg) brightness(100%) contrast(101%)' }}
               priority
             />
           </Link>
