@@ -6,14 +6,19 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Photo */}
-      <Image
-        src="/images/hero-party.jpg"
-        alt="NetoFun Party"
-        fill
-        className="object-cover"
-        priority
-      />
+      {/* Background Video */}
+      <div className="absolute inset-0 overflow-hidden">
+        <iframe
+          src="https://www.youtube.com/embed/8eJZoUERAyM?autoplay=1&muted=1&loop=1&controls=0&showinfo=0&rel=0&playlist=8eJZoUERAyM&playsinline=1"
+          className="absolute top-1/2 left-1/2 w-[200%] h-[200%] pointer-events-none"
+          style={{
+            transform: 'translate(-50%, -50%)',
+          }}
+          allow="autoplay; encrypted-media"
+          frameBorder="0"
+          title="NetoFun Video Background"
+        />
+      </div>
 
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-black/40" />
