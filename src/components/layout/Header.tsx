@@ -39,8 +39,8 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      className={`fixed top-0 right-0 left-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-sm ${
+        isScrolled ? 'shadow-lg' : ''
       }`}
     >
       <Container>
@@ -50,11 +50,9 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="נטו פאן"
-              width={140}
-              height={50}
-              className={`h-10 w-auto transition-all duration-300 ${
-                isScrolled ? '' : 'brightness-0 invert drop-shadow-md'
-              }`}
+              width={160}
+              height={60}
+              className="h-12 w-auto"
               priority
             />
           </Link>
@@ -65,9 +63,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`font-medium transition-colors hover:text-primary-500 ${
-                  isScrolled ? 'text-gray-800' : 'text-white drop-shadow-sm'
-                }`}
+                className="font-medium text-gray-800 transition-colors hover:text-primary-500"
               >
                 {link.label}
               </Link>
@@ -92,9 +88,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`lg:hidden p-2 rounded-lg transition-colors ${
-              isScrolled ? 'text-gray-800' : 'text-white drop-shadow-sm'
-            }`}
+            className="lg:hidden p-2 rounded-lg text-gray-800"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
