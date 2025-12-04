@@ -56,11 +56,11 @@ export default function TestimonialsCarousel() {
           אומרים עלינו
         </SectionTitle>
 
-        <div className="relative max-w-4xl mx-auto px-16 md:px-0">
+        <div className="relative max-w-4xl mx-auto">
           {/* Navigation Buttons */}
           <button
             onClick={prev}
-            className="absolute right-0 top-1/2 -translate-y-1/2 md:-right-16 z-10 w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300"
+            className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300"
             aria-label="הקודם"
           >
             <FaChevronRight className="text-gray-600" />
@@ -68,7 +68,7 @@ export default function TestimonialsCarousel() {
 
           <button
             onClick={next}
-            className="absolute left-0 top-1/2 -translate-y-1/2 md:-left-16 z-10 w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300"
+            className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-white rounded-full shadow-md hover:shadow-lg flex items-center justify-center hover:bg-gray-50 transition-all duration-300"
             aria-label="הבא"
           >
             <FaChevronLeft className="text-gray-600" />
