@@ -75,7 +75,7 @@ export default function TestimonialsCarousel() {
           </button>
 
           {/* Testimonial Card */}
-          <div className="overflow-hidden px-4">
+          <div className="overflow-hidden px-4 py-4">
             <AnimatePresence mode="wait">
               <motion.div
                 key={currentIndex}
