@@ -75,35 +75,33 @@ export default function TestimonialsCarousel() {
           </button>
 
           {/* Testimonial Card */}
-          <div className="overflow-hidden px-4 py-4">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={currentIndex}
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -50 }}
-                transition={{ duration: 0.3 }}
-                className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
-              >
-                <FaQuoteRight className="text-primary-300 text-4xl mb-6" />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              className="bg-white rounded-2xl shadow-xl p-8 md:p-12 mx-4"
+            >
+              <FaQuoteRight className="text-primary-300 text-4xl mb-6" />
 
-                <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
-                  &ldquo;{testimonials[currentIndex].text}&rdquo;
-                </p>
+              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mb-8">
+                &ldquo;{testimonials[currentIndex].text}&rdquo;
+              </p>
 
-                <div className="flex items-center gap-4">
-                  {/* Avatar placeholder */}
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
-                    {testimonials[currentIndex].name.charAt(0)}
-                  </div>
-                  <div>
-                    <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
-                    <p className="text-gray-600">{testimonials[currentIndex].destination}</p>
-                  </div>
+              <div className="flex items-center gap-4">
+                {/* Avatar placeholder */}
+                <div className="w-14 h-14 bg-gradient-to-br from-primary-400 to-primary-600 rounded-full flex items-center justify-center text-white text-xl font-bold">
+                  {testimonials[currentIndex].name.charAt(0)}
                 </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
+                <div>
+                  <p className="font-bold text-lg">{testimonials[currentIndex].name}</p>
+                  <p className="text-gray-600">{testimonials[currentIndex].destination}</p>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
 
           {/* Dots */}
           <div className="flex justify-center gap-2 mt-8">
