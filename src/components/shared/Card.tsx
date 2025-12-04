@@ -29,8 +29,9 @@ export default function Card({
 
   return (
     <motion.div
-      whileHover={hover ? { y: -5, boxShadow: '0 20px 40px rgba(0,0,0,0.1)' } : undefined}
-      className={`bg-white rounded-2xl overflow-hidden shadow-lg ${className}`}
+      whileHover={hover ? { y: -5 } : undefined}
+      transition={{ duration: 0.3 }}
+      className={`bg-white rounded-2xl overflow-hidden shadow-lg ${hover ? 'hover:shadow-xl transition-shadow duration-300' : ''} ${className}`}
     >
       {image && (
         <div className={`relative ${aspectRatios[aspectRatio]} overflow-hidden`}>

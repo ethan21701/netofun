@@ -22,7 +22,7 @@ export default function PackageIncludes({ items }: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="bg-white p-6 rounded-2xl shadow-lg text-center"
+              className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 text-center"
             >
               <span className="text-4xl mb-4 block">{item.icon}</span>
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>

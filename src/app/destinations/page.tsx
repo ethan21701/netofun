@@ -25,7 +25,7 @@ export default function DestinationsPage() {
               href={`/destinations/${dest.slug}`}
               className="group block"
             >
-              <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg">
+              <div className="relative h-96 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                 {dest.heroImage ? (
                   <Image
                     src={dest.heroImage}

@@ -121,7 +121,7 @@ export default function TestimonialsPage() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.05 }}
-                className="bg-white rounded-2xl shadow-lg p-6"
+                className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6"
               >
                 <FaQuoteRight className="text-primary-300 text-2xl mb-4" />
 

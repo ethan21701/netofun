@@ -35,7 +35,7 @@ export default function DestinationsGrid() {
               transition={{ duration: 0.3 }}
             >
               <Link href={`/destinations/${dest.slug}`} className="group block">
-                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg">
+                <div className="relative h-80 rounded-2xl overflow-hidden shadow-lg group-hover:shadow-xl transition-shadow duration-300">
                   {/* Background Image or Gradient */}
                   {dest.image ? (
                     <Image
